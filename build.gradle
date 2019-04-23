@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories
+{
+	jcenter()
+}
+
+jar
+{
+	manifest
+	{
+		attributes
+		{
+			'Main-Class': 'cs.odu.edu.cs417.CPUProjectMain'
+		}
+	}
+}

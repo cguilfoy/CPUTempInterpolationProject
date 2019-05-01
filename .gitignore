@@ -13,3 +13,8 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 /bin/
+/output_core_4.txt
+/output_core_3.txt
+/output_core_2.txt
+/output_core_1.txt
+/gradle.properties

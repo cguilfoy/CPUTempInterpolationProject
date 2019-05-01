@@ -5,3 +5,34 @@ repositories
 {
 	jcenter()
 }
+
+dependencies
+{
+	testCompile "junit:junit:4.12+"
+}
+
+jar {
+	manifest 
+	{
+			attributes (
+            	'Main-Class': 'cs.odu.edu.cs417.CPUProjectMain'
+			)
+	}
+}
+
+test
+{
+	ignoreFailures = true
+}
+
+javadoc
+{
+	options.with
+	{
+		links 'https://docs.oracle.com/javase/8/docs/api/', 'gradle/javadocs/jdk'
+	}
+	
+	failOnError = false
+}
+
+build.dependsOn javadoc
